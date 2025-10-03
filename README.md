@@ -34,9 +34,11 @@ python scrape.py
 
 ## Project Structure 📂
 
+```
 TIH_SCRAPING_ASSIGNMENT/
 │
 ├── scrape.py
 ├── config.py
 ├── README.md
 ├── .gitignore
+```
