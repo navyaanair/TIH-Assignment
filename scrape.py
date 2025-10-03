@@ -43,7 +43,7 @@ def collect_pdf_links(article_links):
     """Visit each article and extract PDF links."""
     pdf_links = set()
 
-    print("\n🔍 Visiting each article to find PDFs...")
+   
     for idx, article in enumerate(article_links, 1):
         print(f"[{idx}/{len(article_links)}] Visiting: {article}")
         try:
@@ -95,7 +95,7 @@ def zip_pdfs():
     with ZipFile(ZIP_FILE, "w") as zf:
         for f in os.listdir(PDF_FOLDER):
             zf.write(os.path.join(PDF_FOLDER, f), arcname=f)
-    print(f"\n All PDFs downloaded and zipped into {ZIP_FILE}")
+    
 
 
 # --- MAIN EXECUTION ---
